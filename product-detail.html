@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="icon" href="image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid d-nav">
+                <div class="d-img-nav">
+                    <img src="image/logo.jpg" class="img-nav" alt="">
+                    <h6 class="mx-2 text-info fs-6" style="width: 120px;">Daewoo mobile devices</h6>
+                </div>
+                <a href="index.html" class="ms-5 fs-5 text-decoration-none btnGoHome">Home page</a>
+                <div class="d-login ms-3 d-flex justify-content-center align-items-center">
+                    <ul class="d-flex w-75 justify-content-between align-items-center mt-2 links">
+                        <a href="login.html">Sign in</a>
+                        <a href="register.html">Sign up</a>
+                    </ul>
+                    <a href="" class="d-none fs-4 text-primary" id="userInfo"><span
+                            class="text-black text-decoration-none">Hello</span></a>
+                    <div class="logOut bg-light">
+                        <i class="fa-solid fa-circle-xmark position-absolute btnClose"></i>
+                        <li class="text-danger rounded-5 bg-white fs-5" id="btnLogOut"><i
+                                class="bx bxs-log-out-circle me-1"></i>log out</li>
+                        <li class="text-danger rounded-5 bg-white fs-5" id="btnLogOut2"><i
+                                class="fa-solid fa-plus me-1"></i>Add account</li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="product-detail-container bg-white w-75 m-auto rounded-4">
+        <h5 id="product-name" class="text-center py-3"></h5>
+        <div class="d-flex justify-content-between px-2 py-5 divProDet">
+            <img id="product-image" src="" alt="Product Image" style="width: 300px;">
+            <div class="w-50 dInfo">
+                <h5>Information :</h5>
+                <p id="product-price" class="text-danger fs-5"></p>
+                <del id="product-instead" class="text-secondary fs-5"></del>
+                <p id="product-description"></p>
+                <h5>To order the product :</h5>
+                <p>1. Register your information in the form below</p>
+                <p>2.Click send and purchase</p>
+                <p>3. Confirm your purchase</p>
+                <button onclick="goBack()" class="btn btn-danger">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3 bg-white formShop m-auto p-3 rounded-4 shadow-lg">
+        <form action="">
+            <label for="exampleFormControlInput1" class="form-label">Enter your name :</label>
+            <input type="email" class="form-control mb-3 rounded-5" id="exampleFormControlInput1">
+            <label for="exampleFormControlInput2" class="form-label">Enter your address :</label>
+            <input type="text" class="form-control mb-3 rounded-5" id="exampleFormControlInput2">
+            <label for="exampleFormControlInput3" class="form-label">Enter your phone number :</label>
+            <input type="text" class="form-control rounded-5" id="exampleFormControlInput3">
+            <button class="btn btn-secondary mt-3 text-light btnSubmit">Sending and purchasing</button>
+        </form>
+      </div>
+
+    <script src="Js/product-detail.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>

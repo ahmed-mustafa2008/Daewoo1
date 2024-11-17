@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <main>
+        <header class="container-fluid bg-light fixed-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid d-nav">
+                    <div class="d-img-nav">
+                        <img src="image/logo.jpg" class="img-nav" alt="">
+                        <h6 class="mx-2 text-info fs-6" style="width: 120px;">Daewoo mobile devices</h6>
+                    </div>
+                    <div class="d-login ms-3 d-flex justify-content-evenly">
+                        <a href="login.html">Sign in</a>
+                        <a href="index.html" class="text-primary">Home</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="parent rounded-3 bg-light">
+            <form action="" class="">
+                <label for="inputUserName" class="mt-4 mb-2">Enter your username:</label>
+                <input type="text" class="form-control mb-4 rounded-5" placeholder="ex: ahmed16" id="inputUserName">
+                <label for="inputGmail" class="mb-2">Enter your Gmail:</label>
+                <input type="email" class="form-control mb-4 rounded-5" placeholder="ex: ahmed@example.com" id="inputGmail">
+                <label for="inputPassword" class="mb-2">Enter your Password:</label>
+                <input type="password" class="form-control mb-4 rounded-5" id="inputPassword">
+                <input type="submit" value="Sign up" id="btnRegister" class="form-control w-25 m-auto bg-primary text-light">
+            </form>
+            <p class="text-center mt-4 text-danger-emphasis">Do you already have an account? <a href="register.html" class="ysAcc">Sign in</a></p>
+        </section>
+    </main>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+    <script src="Js/register.js"></script>
+</body>
+
+</html>

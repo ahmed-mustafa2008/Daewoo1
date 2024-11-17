@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="image/logo.jpg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <main>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid d-nav">
+                    <div class="d-img-nav">
+                        <img src="image/logo.jpg" class="img-nav" alt="">
+                        <h6 class="mx-2 text-info fs-6" style="width: 120px;">Daewoo mobile devices</h6>
+                    </div>
+                    <a href="index.html" class="ms-5 fs-5 text-decoration-none btnGoHome">Home page</a>
+                    <div class="d-login ms-3 d-flex justify-content-center align-items-center">
+                        <ul class="d-flex w-75 justify-content-between align-items-center mt-2 links">
+                            <a href="login.html">Sign in</a>
+                            <a href="register.html">Sign up</a>
+                        </ul>
+                        <a href="" class="d-none fs-4 text-primary" id="userInfo"><span
+                                class="text-black text-decoration-none">Hello</span></a>
+                        <div class="logOut bg-light">
+                            <i class="fa-solid fa-circle-xmark position-absolute btnClose"></i>
+                            <li class="text-danger rounded-5 bg-white fs-5" id="btnLogOut"><i
+                                    class="bx bxs-log-out-circle me-1"></i>log out</li>
+                            <li class="text-danger rounded-5 bg-white fs-5" id="btnLogOut2"><i
+                                    class="fa-solid fa-plus me-1"></i>Add account</li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- <div class="text-center">
+            <button class="btn btn-danger btnRemoveProductCart w-25 p-2">Remove All</button>
+            <div class="container2 row"></div>
+
+        </div> -->
+        <div class="policy">
+            <h1 class="text-center">Daewoo Smart Devices Company Policies</h1>
+            <div class="mt-4">
+                <div class="SwitchPolicy bg-white mx-4 rounded-4 p-3">
+                    <h3>Switch policy</h3>
+                    <p>1- Please make sure to keep the invoice for the received product attached to the package because of its great importance in completing the exchange process properly and the importance of the information attached to it, such as the package number and product code.</p>
+                    <p>2- The exchange request shall be submitted within a period not exceeding 24 hours from receiving the package, as this period is sufficient for the customer to verify and confirm the product he received.</p>
+                    <p>3- The exchange request is submitted by communicating with the live customer service (chat) shown at the bottom of the website and application, where the service employee is provided with the customer’s phone number and the order number shown on the invoice attached to the order that he wishes to exchange.</p>
+                    <p>5- The exchange is free if a defect is found in the product that did not appear during receipt and when the customer confirms the package he received. Here we stress to the customer the necessity of verifying the product in the presence of the delivery employee, such as measuring and others, to avoid exchange later and address the defect directly through the delivery employee.</p>
+                    <p>6- It is allowed to exchange the product for another product at the same price, not including the delivery fees for the first time, if any, or for another product at a higher price only, with the price difference and exchange fees paid.</p>
+                    <p>7- The exchange request will not be accepted if the customer destroys the product’s box or cover, and also if the product is used, and the product must be complete and not damaged. Here we confirm our keenness to serve the customer optimally.</p>
+                    <p>8- Exchange is available for all products available on the site, except for perfumes, underwear, and electronics such as phones and laptops.</p>
+                </div>
+                <div class="ReturnPolicy bg-white mx-4 rounded-4 p-3 mt-4">
+                    <h3>Return policy</h3>
+                    <p>- The return request shall be submitted within a period not exceeding 24 hours from receipt of the package.</p>
+                    <p>- The return request is submitted through the direct chat service shown at the bottom of the website screen.</p>
+                    <p>- The return request will not be accepted if the customer destroys the product’s box or packaging.</p>
+                    <p>-The returned product (which is to be returned) must be complete, undamaged and unused.</p>
+                    <p>- The return request will be processed within 5-7 official working days.</p>
+                    <p>- The delivery employee has the right to inspect the returned product before receiving it from the customer.</p>
+                    <p>- The delivery employee has the right to refuse to receive the returned product if the customer causes a defect in the product due to misuse.</p>
+                    <p>- The company has the right to reject the return request if it violates the return policy.</p>
+                    <p>- If payment is made through Visa or MasterCard, the amount due will be returned to the customer on his card within 5 official working days.</p>
+                </div>
+                <div class="ReturnPolicy bg-white mx-4 rounded-4 p-3 mt-4">
+                    <h3>Privacy policy</h3>
+                    <p>These terms are designed to serve those who are interested in how Mart uses their personal information on the Internet, as described in accordance with international laws regarding privacy and information security conditions. Information that can be used alone or with other information to identify contact information or locate a specific person. Please read our Privacy Policy carefully to get a clear understanding of how we collect, use, protect or handle personally identifiable information in accordance with our website. .</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+    <!-- <script>
+        var links = document.querySelector(".links");
+        var userInfo = document.getElementById("userInfo");
+        var logOut = document.querySelector(".logOut");
+        var btnClose = document.querySelector(".btnClose");
+        var btnLogOut = document.querySelector("#btnLogOut");
+        var btnLogOut2 = document.getElementById("btnLogOut2");
+        if (localStorage.getItem("userName")) {
+            links.classList.add("d-none");
+            userInfo.classList.remove("d-none");
+            userInfo.innerHTML += ` '${localStorage.getItem("userName")}'`
+        };
+        userInfo.addEventListener('click', function () {
+            logOut.style.transform = "scale(1)"
+            logOut.style.transition = "all 0.2s"
+        });
+        btnClose.addEventListener("click", function () {
+            logOut.style.transform = "scale(0)"
+        });
+        userInfo.addEventListener('click', function (e) {
+            e.preventDefault();
+        });
+        btnLogOut.addEventListener('click', function () {
+            var ques = confirm("Do you really want to log out?");
+            if (ques == true) {
+                localStorage.clear();
+                location.reload();
+            } else {
+                logOut.style.transform = "scale(0)"
+            };
+        });
+        btnLogOut2.addEventListener('click', function () {
+            window.location = "register.html";
+        });
+    </script> -->
+</body>
+
+</html>
